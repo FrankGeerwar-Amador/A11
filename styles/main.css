@@ -132,15 +132,15 @@ footer {
 
 /* styles for the menu */
 .menu {
-	display: flex;
-	flex-wrap: wrap;
-	& li { 
-		flex-basis: 20%; 
-		text-align: center;
-	}
+	position: absolute;
+	left: 0;
+	background-color: var(--accent-color);
+	width: 40%;
+	display: none;
 }
 
 .navbar {
+	position: relative;
 	clear: left;
 	background-color: var(--accent-color);
 	& a {
@@ -194,5 +194,30 @@ section {
 }
 aside {
 	flex-basis: 25%;
+}
+}
+
+@media only screen and (width >= 768px){
+	.menu {
+	display: flex;
+	position: relative;
+	width: 100%;
+	& li { 
+		flex-basis: 20%; 
+		text-align: center;
+	}
+}
+.menu-btn{
+	content: "\2630";
+	display: none;
+	#checkbox-toggle{
+		display: none;
+	}
+	#checkbox-toggle:checked ~ .menu{
+		display: block;
+	}
+	#checkbox-toggle:checked ~ .menu-btn::after{
+		content: "\2716";
+	}
 }
 }
