@@ -188,6 +188,8 @@ footer {
 .menu-btn{
 	display: block;
 	padding: 1em;
+	background-color: var(--accent-color);
+	color: var(--light_menu);
 }
 .menu-btn::after{
 	content: "\2630";
@@ -198,11 +200,11 @@ footer {
 	display: none;
 }
 
-#checkbox-toggle ~ .menu{
+#checkbox-toggle:checked ~ .menu{
 	display: block;
 }
 
-#checkbox-toggle ~ .menu-btn::after{
+#checkbox-toggle:checked ~ .menu-btn::after{
 	content: "\2716";
 }
 
@@ -217,11 +219,14 @@ section {
 aside {
 	flex-basis: 25%;
 	}
-	.menu {
+.menu {
 	position: relative;
 	left: 0;
 	background-color: var(--accent-color);
 	width: 100%;
+	display: none;
+}
+#checkbox-toggle{
 	display: none;
 }
 }
