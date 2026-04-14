@@ -217,7 +217,6 @@ section {
 aside {
 	flex-basis: 25%;
 	}
-}
 	.menu {
 	position: relative;
 	left: 0;
@@ -225,4 +224,4 @@ aside {
 	width: 100%;
 	display: none;
 }
-
+}
