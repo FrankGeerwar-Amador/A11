@@ -132,11 +132,11 @@ footer {
 
 /* styles for the menu */
 .menu {
+	display: none;
 	position: absolute;
 	left: 0;
 	background-color: var(--accent-color);
 	width: 40%;
-	display: none;
 }
 
 .navbar {
@@ -220,13 +220,17 @@ aside {
 	flex-basis: 25%;
 	}
 .menu {
+	display: flex;
 	position: relative;
 	left: 0;
 	background-color: var(--accent-color);
 	width: 100%;
-	display: none;
 }
 #checkbox-toggle{
+	display: none;
+}
+
+.menu-btn{
 	display: none;
 }
 }
