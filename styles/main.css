@@ -185,39 +185,44 @@ footer {
 .menu > li:first-child a { margin-left: 0; }
 .menu > li:last-child a { margin-right: 0; }
 
-@media only screen and (width >= 768px){
+.menu-btn{
+	display: block;
+	padding: 1em;
+}
+.menu-btn::after{
+	content: "\2630";
+
+}
+
+#checkbox-toggle{
+	display: none;
+}
+
+#checkbox-toggle ~ .menu{
+	display: block;
+}
+
+#checkbox-toggle ~ .menu-btn::after{
+	content: "\2716";
+}
+
+@media only screen and (width >= 600px){
 	main {
 	flex-direction: row;
 }
 section {
 	flex-basis: 75%;
+	border-bottom: none;
 }
 aside {
 	flex-basis: 25%;
+	}
 }
+	.menu {
+	position: relative;
+	left: 0;
+	background-color: var(--accent-color);
+	width: 100%;
+	display: none;
 }
 
-@media only screen and (width >= 768px){
-	.menu {
-	display: flex;
-	position: relative;
-	width: 100%;
-	& li { 
-		flex-basis: 20%; 
-		text-align: center;
-	}
-}
-.menu-btn{
-	content: "\2630";
-	display: none;
-	#checkbox-toggle{
-		display: none;
-	}
-	#checkbox-toggle:checked ~ .menu{
-		display: block;
-	}
-	#checkbox-toggle:checked ~ .menu-btn::after{
-		content: "\2716";
-	}
-}
-}
