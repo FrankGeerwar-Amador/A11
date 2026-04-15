@@ -249,6 +249,10 @@ aside {
 	flex-direction: row;
 	justify-content: space-around;
 }
+.submenu:hover > .dropdown {
+	display: block;
+	flex-direction: row;
+}
 .submenu{
 	left: 0;
 	right: 0;
