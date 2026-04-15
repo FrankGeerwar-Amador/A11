@@ -277,6 +277,7 @@ header{
 		display: block;
 	}
 	.dropdown{
+		display: block;
 		flex-direction: row;
 	}
 }
