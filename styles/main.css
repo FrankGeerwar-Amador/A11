@@ -147,7 +147,7 @@ footer {
 		display: block;
 		padding: 1em;
 		text-decoration: none;
-		margin: 0 1px 2px;
+		margin: 0 2px 2px 0;
 	}
 	& a:link, a:visited { 
 		color: var(--light_menu);
@@ -171,6 +171,9 @@ footer {
 	& small::after{
 			content: "\25B6";
 		}
+	& li a {
+		margin: 2px;
+	}
 }
 
 .dropdown {
@@ -188,8 +191,6 @@ footer {
 	display: block;
 }
 
-.menu > li:first-child a { margin-left: 0; }
-.menu > li:last-child a { margin-right: 0; }
 
 .menu-btn{
 	display: block;
@@ -253,4 +254,13 @@ aside {
 	right: 0;
 	top: auto;
 	}
+
+.menu > li:first-child a { margin-left: 0; }
+.menu > li:last-child a { margin-right: 0; }
+
+.navbar {
+	& a {
+		margin: 0 1px 2px;
+	}
+}
 }
