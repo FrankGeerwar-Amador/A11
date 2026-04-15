@@ -208,8 +208,8 @@ footer {
 
 #checkbox-toggle:checked ~ .navbar .menu{
 	display: block;
-	/*flex-direction: row;
-	justify-content: space-around;*/
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 #checkbox-toggle:checked ~ .menu-btn::after{
