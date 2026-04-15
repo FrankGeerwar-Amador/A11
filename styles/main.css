@@ -200,7 +200,7 @@ footer {
 	display: none;
 }
 
-#checkbox-toggle:checked ~ .menu{
+#checkbox-toggle:checked ~ .navbar .menu{
 	display: block;
 }
 
