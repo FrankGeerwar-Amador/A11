@@ -202,8 +202,8 @@ footer {
 
 #checkbox-toggle:checked ~ .navbar .menu{
 	display: block;
-	flex-direction: row;
-	justify-content: space-around;
+	/*flex-direction: row;
+	justify-content: space-around;*/
 }
 
 #checkbox-toggle:checked ~ .menu-btn::after{
@@ -224,14 +224,11 @@ aside {
 .menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	position: relative;
 	left: 0;
 	background-color: var(--accent-color);
 	width: 100%;
-}
-.menu li{
-	text-align: center;
 }
 #checkbox-toggle{
 	display: none;
@@ -239,5 +236,10 @@ aside {
 
 .menu-btn{
 	display: none;
+}
+#checkbox-toggle:checked ~ .navbar .menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 }
