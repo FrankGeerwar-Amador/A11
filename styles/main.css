@@ -188,6 +188,7 @@ footer {
 
 .submenu:hover > .dropdown {
 	display: block;
+	flex-direction: column;
 }
 
 
