@@ -168,7 +168,7 @@ footer {
 		margin-left: .25em; 
 	}
 	& small::after{
-			content: "\25BC";
+			content: "\25B6";
 		}
 	& li a {
 		margin: 2px;
@@ -252,6 +252,10 @@ aside {
 	left: 0;
 	right: 0;
 	top: auto;
+	position: relative;
+	& small::after{
+			content: "\25BC";
+		}
 	}
 
 .menu > li:first-child a { margin-left: 0; }
