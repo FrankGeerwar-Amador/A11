@@ -168,7 +168,7 @@ footer {
 		margin-left: .25em; 
 	}
 	& small::after{
-			content: "\25B6";
+			content: "\25BC";
 		}
 	& li a {
 		margin: 2px;
