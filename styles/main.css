@@ -165,7 +165,15 @@ footer {
 
 .submenu {
 	position: relative;
-	& small { margin-left: .25em; }
+	top: 0;
+	left: 100%;
+	width: 100%;
+	& small { 
+		margin-left: .25em; 
+	}
+	& small::after{
+			content: "/25b6";
+		}
 }
 
 .dropdown {
@@ -241,5 +249,14 @@ aside {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+}
+.submenu{
+	position: relative;
+	left: 0;
+	right: 0;
+	top: auto;
+	& small::after{
+		content: "\25b6";
+	}
 }
 }
