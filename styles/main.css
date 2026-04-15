@@ -163,9 +163,6 @@ footer {
 }
 
 .submenu {
-	top: 0;
-	left: 100%;
-	width: 100%;
 	position: relative;
 	& small { 
 		margin-left: .25em; 
