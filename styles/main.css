@@ -165,6 +165,9 @@ footer {
 
 .submenu {
 	position: relative;
+	top: 0;
+	left: 100%;
+	width: 100%;
 	& small { 
 		margin-left: .25em; 
 	}
@@ -248,15 +251,8 @@ aside {
 	justify-content: space-around;
 }
 .submenu{
-	position: relative;
 	left: 0;
-	/*first mobile*/
-	top: 0;
-	left: 100%;
-	width: 100%;
-	/*first mobile*/
-	& small::after{
-		content: "\25b6";
+	right: 0;
+	top: auto;
 	}
-}
 }
