@@ -177,6 +177,7 @@ footer {
 
 .dropdown {
 	position: absolute;
+	flex-direction: column;
 	top: 0;
 	left: 100%;
 	width: 100%;
@@ -188,7 +189,6 @@ footer {
 
 .submenu:hover > .dropdown {
 	display: block;
-	flex-direction: column;
 }
 
 
