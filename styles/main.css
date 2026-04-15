@@ -208,7 +208,7 @@ footer {
 }
 
 #checkbox-toggle:checked ~ .navbar .menu{
-	display: flex;
+	display: block;
 	flex-direction: row;
 	justify-content: space-around;
 }
@@ -245,7 +245,7 @@ aside {
 	display: none;
 }
 #checkbox-toggle:checked ~ .navbar .menu{
-	display: block;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
