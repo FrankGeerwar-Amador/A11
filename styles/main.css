@@ -177,8 +177,8 @@ footer {
 
 .dropdown {
 	position: absolute;
-	top: 100%;
-	left: 0;
+	top: 0;
+	left: 100%;
 	width: 100%;
 	background-color: var(--accent-color);
 	color: var(--light_menu);
@@ -249,10 +249,7 @@ aside {
 	flex-direction: row;
 	justify-content: space-around;
 }
-.submenu:hover > .dropdown {
-	display: block;
-	flex-direction: row;
-}
+
 .submenu{
 	left: 0;
 	right: 0;
