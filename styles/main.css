@@ -236,6 +236,8 @@ aside {
 	left: 0;
 	background-color: var(--accent-color);
 	width: 100%;
+} .menu li{
+	margin-left: 1em;
 }
 #checkbox-toggle{
 	display: none;
