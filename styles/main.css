@@ -210,7 +210,7 @@ footer {
 	content: "\2716";
 }
 
-@media only screen and (width >= 768px){
+@media only screen and (width >= 600px){
 	main {
 	flex-direction: row;
 }
