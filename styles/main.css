@@ -222,7 +222,7 @@ aside {
 .menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	position: relative;
 	left: 0;
 	background-color: var(--accent-color);
