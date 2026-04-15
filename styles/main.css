@@ -276,8 +276,5 @@ header{
 		margin: .5em 1.25em .5em 0;
 		display: block;
 	}
-	.dropdown{
-		display: block;
-		flex-direction: row;
-	}
+	
 }
