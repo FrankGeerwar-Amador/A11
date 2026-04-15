@@ -202,6 +202,8 @@ footer {
 
 #checkbox-toggle:checked ~ .navbar .menu{
 	display: block;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 #checkbox-toggle:checked ~ .menu-btn::after{
@@ -222,11 +224,14 @@ aside {
 .menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	position: relative;
 	left: 0;
 	background-color: var(--accent-color);
 	width: 100%;
+}
+.menu li{
+	text-align: center;
 }
 #checkbox-toggle{
 	display: none;
