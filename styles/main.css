@@ -165,9 +165,6 @@ footer {
 
 .submenu {
 	position: relative;
-	top: 0;
-	left: 100%;
-	width: 100%;
 	& small { 
 		margin-left: .25em; 
 	}
@@ -178,8 +175,9 @@ footer {
 
 .dropdown {
 	position: absolute;
-	left: 0;
-	right: 0;
+	top: 0;
+	left: 100%;
+	width: 100%;
 	background-color: var(--accent-color);
 	color: var(--light_menu);
 	display: none;
