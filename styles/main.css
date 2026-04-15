@@ -165,9 +165,6 @@ footer {
 
 .submenu {
 	position: relative;
-	top: 0;
-	left: 100%;
-	width: 100%;
 	& small { 
 		margin-left: .25em; 
 	}
@@ -253,8 +250,11 @@ aside {
 .submenu{
 	position: relative;
 	left: 0;
-	right: 0;
-	top: auto;
+	/*first mobile*/
+	top: 0;
+	left: 100%;
+	width: 100%;
+	/*first mobile*/
 	& small::after{
 		content: "\25b6";
 	}
