@@ -172,7 +172,7 @@ footer {
 		margin-left: .25em; 
 	}
 	& small::after{
-			content: "/25b6";
+			content: "\25B6";
 		}
 }
 
